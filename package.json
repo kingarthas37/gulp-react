@@ -1,6 +1,6 @@
 {
-  "name": "gulp",
-  "description": "gulp-final-demo",
+  "name": "gulp-react",
+  "description": "gulp-react-demo",
   "engines": {
     "node": "~4.2.0"
   },
@@ -34,7 +34,6 @@
     "gulp-uglify": "~1.4.0",
     "gulp-util": "~3.0.0",
     "gulp-watch": "~4.3.0",
-    "gulp.spritesmith": "~4.2.0",
     "imagemin-pngquant": "~4.2.0",
     "merge-stream": "^1.0.0",
     "minimist": "~1.2.0",
@@ -73,16 +72,6 @@
   "css-common": [
     "public/css/bootstrap.min.css",
     "public/css/jquery.datetimepicker.css"
-  ],
-  "sprites": [
-    {
-      "name": "common",
-      "algorithm": "binary-tree"
-    },
-    {
-      "name": "page",
-      "algorithm": "binary-tree"
-    }
   ],
   "path": {
     "base": "public/",
