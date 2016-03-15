@@ -4,7 +4,6 @@ var path = require('path');
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var size = require('gulp-size');
 var rename = require('gulp-rename');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
@@ -30,7 +29,6 @@ gulp.task('css-common:prod',function() {
         .pipe(concat(config.name + '.external.css'))
         .pipe(minifyCss({compatibility: 'ie8'}))
         .pipe(sourcemaps.write('.'))
-        .pipe(size())
         .pipe(gulp.dest(config.path.cssMin));
 });
 
@@ -38,7 +36,7 @@ gulp.task('css-common:prod',function() {
 //页面级的css: name.pages.css,执行前先执行task 'css-common',入口为public/dev/css/main.sass
 //所有页面级的css管理都有main.scss控制
 //增加autoprefixer功能
-gulp.task('css',['sprite'], function () {
+gulp.task('css', function () {
     return gulp.src(path.join(config.path.cssDev,'main.scss'))
         .pipe(sourcemaps.init())
         .pipe(sass())
@@ -58,6 +56,5 @@ gulp.task('css:prod',['css-common:prod'], function () {
         .pipe(rename(config.name + '.pages.css'))
         .pipe(minifyCss({compatibility: 'ie8'}))
         .pipe(sourcemaps.write('.'))
-        .pipe(size())
         .pipe(gulp.dest(config.path.cssMin));
 });

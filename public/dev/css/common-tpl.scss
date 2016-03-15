@@ -75,7 +75,7 @@
     .price {
       font-family: Verdana;
       font-size: 20px;
-      color: $red;
+      color: #ff0000;
       padding-top: 10px;
       margin-bottom: 10px;
     }
@@ -101,7 +101,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       strong {
-        color: $red;
+        color: #ff0000;
       }
     }
 
@@ -113,7 +113,7 @@
         line-height: 24px;
         border: 1px solid #ddd;
         &:hover {
-          border-color: $red;
+          border-color: #ff0000;
         }
       }
     }

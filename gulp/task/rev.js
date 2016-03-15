@@ -4,7 +4,6 @@ var path = require('path');
 
 var gulp = require('gulp');
 var RevAll = require('gulp-rev-all');
-var fingerprint = require('gulp-fingerprint');
 var async = require('async');
 
 var args = require('../util/arg-parse');
