@@ -4,12 +4,13 @@
     <meta charset="utf-8"/>
     <title>demo index</title>
 
-    <link rel="stylesheet" href="public/min/css/gulp.external.css"/>
-    <link rel="stylesheet" href="public/min/css/gulp.pages.css"/>
+    <link rel="stylesheet" href="public/dist/css/gulp-react.external.css"/>
+    <link rel="stylesheet" href="public/dist/css/gulp-react.pages.css"/>
     
 </head>
 <body>
 
+<div id="container"></div>
 
 <div class="container">
     
@@ -61,11 +62,17 @@
 </div>
 
 
-<script src="public/min/js/gulp.external.js"></script>
-<script src="public/min/js/gulp.main.js"></script>
+<script src="public/js/react.min.js"></script>
+<script src="public/js/react-dom.min.js"></script>
+
+<script src="public/dist/js/gulp-react.bundle.js"></script>
+
+
 <script>
     $(function () {
-        require('index');
+
+        require('detail');
+        
     });
 </script>
 </body>

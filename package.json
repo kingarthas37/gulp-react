@@ -37,6 +37,7 @@
     "minimist": "~1.2.0",
     "node-array": "0.0.7",
     "q": "~1.4.0",
+    "reactify": "^1.1.1",
     "through2": "^2.0.0",
     "underscore": "~1.8.0",
     "vinyl-buffer": "~1.0.0",
