@@ -47,6 +47,8 @@
     "xtend": "~4.0.0"
   },
   "browser": {
+    "react":"./public/js/react.min.js",
+    "react-dom":"./public/js/react-dom.min.js",
     "jquery": "./public/js/jquery.min.js",
     "bootstrap": "./public/js/bootstrap.min.js",
     "underscore": "./public/js/underscore.min.js",

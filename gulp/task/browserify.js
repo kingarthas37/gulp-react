@@ -35,8 +35,10 @@ gulp.task('browserify', function () {
         packageCache: {},
         fullPaths: false,
         entries: [path.resolve(config.path.jsDev,'common/main.js')],  //入口为/common/main.js
-        debug: true  //开启sourcemaps
-    }).transform(reactify);
+        debug: true,  //开启sourcemaps
+    }).transform(reactify,{
+        "es6": true
+    });
 
     var w = watchify(b);
 

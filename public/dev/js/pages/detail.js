@@ -1,5 +1,8 @@
 'use strict';
- 
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+
 var CommentForm = require('index');
 
 var CommentForm1 = React.createClass({
@@ -16,7 +19,7 @@ var CommentForm1 = React.createClass({
         return (
             
             <div>
-                <CommentForm />
+            <CommentForm />
             <form className="commentForm">
                 <input
                     type="text"
