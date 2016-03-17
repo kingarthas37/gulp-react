@@ -23,9 +23,8 @@ var reactify = require('reactify');
 var config = require('../../package.json');
 var onlyScripts = require('../util/script-filter');
 
-//所有页面级的js  dev/js/pages
-var pageScripts = fs.readdirSync(path.join(config.path.jsDev,'pages')).filter(onlyScripts);
-
+//所有页面级的js  dev/js/pages , dev/js/pages/dirs/  最多支持2级目录js
+var pageScripts = onlyScripts(path.join(config.path.jsDev,'pages'));
 
 //dev task
 gulp.task('browserify', function () {
@@ -46,7 +45,8 @@ gulp.task('browserify', function () {
     //使用browserify的require() ，可以将page文件，在页面中require
     pageScripts.forEach(function(page) {
         if(page !== 'main.js') {
-            w.require(path.resolve(config.path.jsDev,'pages',page),{expose:page.replace(/\.js$/,'')});
+            console.log(path.resolve(config.path.jsDev,'pages',page));
+            w.require(path.resolve(config.path.jsDev,'pages',page),{expose:page.replace('/','-').replace(/\.js$/,'')});
         }
     });
     
