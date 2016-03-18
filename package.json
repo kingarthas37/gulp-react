@@ -50,7 +50,7 @@
     "react":"./public/js/react.min.js",
     "react-dom":"./public/js/react-dom.min.js",
     "jquery": "./public/js/jquery.min.js",
-    "bootstrap": "./public/js/bootstrap.min.js",
+    "bootstrap": "./public/js/amazeui.min.js",
     "underscore": "./public/js/underscore.min.js",
     "jquery-jcarousel": "./public/js/jquery.jcarousel.min.js",
     "jquery-cookie": "./public/js/jquery.cookie.js",
@@ -71,8 +71,7 @@
     "swfobject": "swfobject"
   },
   "css-common": [
-    "public/css/bootstrap.min.css",
-    "public/css/jquery.datetimepicker.css"
+    "public/css/amazeui.min.css"
   ],
   "path": {
     "base": "public/",
