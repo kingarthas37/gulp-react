@@ -3,15 +3,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-//dom
-var $nav = $('#nav');
-
 var Nav = React.createClass({
-    getInitialState: function() {
-        return {
-            currentClass:''
-        };
-    },
     render: function() {
         return <nav>
             <a href="#" className={this.current('index')}><span>推荐</span></a>
@@ -22,6 +14,7 @@ var Nav = React.createClass({
         </nav>;
     },
     current:current=>{
+        var $nav = $('#nav');
         if($nav.attr('data-current') === current) {
             return 'current';
         }
@@ -30,6 +23,6 @@ var Nav = React.createClass({
     
 });
 
- 
-
-ReactDOM.render(<Nav />,document.getElementById('nav'));
+if(document.getElementById('nav')) {
+    ReactDOM.render(<Nav />,document.getElementById('nav'));
+}

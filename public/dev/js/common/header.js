@@ -23,6 +23,7 @@ var Header = React.createClass({
     }
 });
 
+module.exports = <Header/>;
 
 ReactDOM.render(
     <Header />,
