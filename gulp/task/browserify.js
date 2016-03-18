@@ -45,7 +45,6 @@ gulp.task('browserify', function () {
     //使用browserify的require() ，可以将page文件，在页面中require
     pageScripts.forEach(function(page) {
         if(page !== 'main.js') {
-            console.log(path.resolve(config.path.jsDev,'pages',page));
             w.require(path.resolve(config.path.jsDev,'pages',page),{expose:page.replace('/','-').replace(/\.js$/,'')});
         }
     });

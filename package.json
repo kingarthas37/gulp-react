@@ -50,7 +50,7 @@
     "react":"./public/js/react.min.js",
     "react-dom":"./public/js/react-dom.min.js",
     "jquery": "./public/js/jquery.min.js",
-    "bootstrap": "./public/js/amazeui.min.js",
+    "amazeui": "./public/js/amazeui.min.js",
     "underscore": "./public/js/underscore.min.js",
     "jquery-jcarousel": "./public/js/jquery.jcarousel.min.js",
     "jquery-cookie": "./public/js/jquery.cookie.js",
