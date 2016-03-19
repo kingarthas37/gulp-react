@@ -19,7 +19,7 @@ var Header = React.createClass({
                 <a className="btn-cart icon-header-cart" href="cart.php">
                 </a>
             </div>
-        </header>;
+        </header>;ª
     }
 });
 
