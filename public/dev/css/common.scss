@@ -173,3 +173,16 @@ form {
     }
   }
 }
+
+#slider {
+  .am-slider-a1 .am-control-nav li a {
+    border-radius: 0;
+    width: 20px;
+    height: 5px;
+    background: #fff;
+    box-shadow:none;
+    &.am-active {
+      background: #ff8887;
+    }
+  }
+}

@@ -131,4 +131,13 @@ form {
         border-bottom: 2px solid #ff8887;
         padding: 4px; }
 
+#slider .am-slider-a1 .am-control-nav li a {
+  border-radius: 0;
+  width: 20px;
+  height: 5px;
+  background: #fff;
+  box-shadow: none; }
+  #slider .am-slider-a1 .am-control-nav li a.am-active {
+    background: #ff8887; }
+
 /*# sourceMappingURL=gulp-react.pages.css.map */

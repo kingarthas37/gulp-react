@@ -9,8 +9,8 @@ var Nav = React.createClass({
             <a href="#" className={this.current('index')}><span>推荐</span></a>
             <a href="#" className={this.current('topic')}><span>专题</span></a>
             <a href="#" className={this.current('news')}><span>本周新品</span></a>
-            <a current="ranks" href="#" className={this.current('ranks')}><span>热卖排行</span></a>
-            <a current="brand" href="#" className={this.current('brand')}><span>品牌</span></a>
+            <a href="#" className={this.current('ranks')}><span>热卖排行</span></a>
+            <a href="#" className={this.current('brand')}><span>品牌</span></a>
         </nav>;
     },
     current:current=>{
@@ -20,7 +20,6 @@ var Nav = React.createClass({
         }
         return '';
     }
-    
 });
 
 if(document.getElementById('nav')) {
