@@ -1,7 +1,6 @@
 'use strict';
 
 var React = require('react');
-var ReactDOM = require('react-dom');
 
 var config = require('./config');
 
@@ -25,7 +24,7 @@ var Slider = React.createClass({
     },
     render: function() {
         let sliders = this.state.sliders;
-        return <div data-am-widget="slider" className="am-slider am-slider-a1" ref="root">
+        return <div id="slider" data-am-widget="slider" className="am-slider am-slider-a1" ref="root">
             <ul className="am-slides">
                 {
                     sliders.map(item=> {
@@ -37,6 +36,4 @@ var Slider = React.createClass({
     }
 });
 
-if(document.getElementById('slider')) {
-    ReactDOM.render(<Slider />,document.getElementById('slider'));
-}
+module.exports = Slider;

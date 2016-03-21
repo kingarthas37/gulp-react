@@ -12,15 +12,15 @@
 </head>
 <body>
 
-<div id="header"></div>
-<div id="nav" data-current="index"></div>
-<div id="slider"></div>
-
+<div id="container" class="index-page"></div>
 
 <script src="../public/dist/js/gulp-react.bundle.js"></script>
 <script>
     $(function () {
-      //  require('index-a');
+        var indexPage = require('index-page');
+        indexPage({
+            currentPage:'index'
+        });
     });
 </script>
 </body>

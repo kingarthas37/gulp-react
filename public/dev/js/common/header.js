@@ -1,11 +1,10 @@
 'use strict';
 
 var React = require('react');
-var ReactDOM = require('react-dom');
 
 var Header = React.createClass({
     render: function() {
-        return <header className="am-g">
+        return <header id="header" className="am-g">
             <div className="am-u-sm-2 am-text-left col-back">
                 <a href="#" className="logo">KIDS</a>
             </div>
@@ -23,6 +22,4 @@ var Header = React.createClass({
     }
 });
 
-if(document.getElementById('header')) {
-    ReactDOM.render(<Header />, document.getElementById('header'));
-}
+module.exports = Header;
