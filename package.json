@@ -37,6 +37,8 @@
     "minimist": "~1.2.0",
     "node-array": "0.0.7",
     "q": "~1.4.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
     "reactify": "^1.1.1",
     "through2": "^2.0.0",
     "underscore": "~1.8.0",
@@ -47,8 +49,9 @@
     "xtend": "~4.0.0"
   },
   "browser": {
-    "react":"./public/js/react.min.js",
-    "react-dom":"./public/js/react-dom.min.js",
+    "react": "./public/js/react.min.js",
+    "react-dom": "./public/js/react-dom.min.js",
+    "react-lazy-load":"./public/js/react-lazyload.min.js",
     "jquery": "./public/js/jquery.min.js",
     "amazeui": "./public/js/amazeui.min.js",
     "underscore": "./public/js/underscore.min.js",

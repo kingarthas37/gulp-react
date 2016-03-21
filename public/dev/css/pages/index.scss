@@ -31,4 +31,32 @@
         }
     }
     
+    .image-view {
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            flex: 1;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    
+    h3 {
+        img {
+            width: 100%;
+        }
+    }
+    
+    .image-list {
+        div {
+            margin-bottom: 2px;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
 }

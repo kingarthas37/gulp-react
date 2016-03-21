@@ -7,3 +7,4 @@ require('./common');
 require('./header');
 require('./nav');
 require('./slider');
+require('./product-list');

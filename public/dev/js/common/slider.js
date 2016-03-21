@@ -1,29 +1,14 @@
 'use strict';
 
 var React = require('react');
-
-var config = require('./config');
-
 var Slider = React.createClass({
-    getInitialState: function() {
-        return {
-            sliders:[]
-        };
-    },
     componentDidMount: function() {
-        $.ajax({
-            url:'https://extrabux-golden-week.leanapp.cn/1.1/functions/index-slider',
-            type:'post',
-            headers:config.leanAppId
-        }).then(results => {
-            this.setState({
-                sliders:results.result
-            });
-            $(this.refs.root).flexslider();
-        });
+        $(this.refs.root).flexslider();
     },
     render: function() {
-        let sliders = this.state.sliders;
+        
+        let sliders = this.props.sliders;
+        
         return <div id="slider" data-am-widget="slider" className="am-slider am-slider-a1" ref="root">
             <ul className="am-slides">
                 {
