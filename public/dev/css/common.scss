@@ -173,7 +173,9 @@ form {
 }
 
 #slider {
-  .am-slider-a1 .am-control-nav li a {
+  height: 210px;
+  overflow: hidden;
+  .am-control-nav li a {
     border-radius: 0;
     width: 20px;
     height: 5px;

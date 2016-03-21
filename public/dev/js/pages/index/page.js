@@ -7,6 +7,7 @@ var Header = require('../../common/header');
 var Nav = require('../../common/nav');
 var Slider = require('../../common/slider');
 
+var IndexNav = require('./nav');
 
 var IndexComponent = React.createClass({
     render:function() {
@@ -15,12 +16,13 @@ var IndexComponent = React.createClass({
                 <Header/>
                 <Nav currentPage={this.props.currentPage} />
                 <Slider/>
+                <IndexNav/>
             </div>
         );
     }
 });
 
 
-module.exports = function (args) {
+module.exports = args => {
     ReactDOM.render(<IndexComponent {...args} />,document.body);
 };

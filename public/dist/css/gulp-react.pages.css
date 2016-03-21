@@ -131,13 +131,46 @@ form {
         border-bottom: 2px solid #ff8887;
         padding: 4px; }
 
-#slider .am-slider-a1 .am-control-nav li a {
-  border-radius: 0;
-  width: 20px;
-  height: 5px;
-  background: #fff;
-  box-shadow: none; }
-  #slider .am-slider-a1 .am-control-nav li a.am-active {
-    background: #ff8887; }
+#slider {
+  height: 210px;
+  overflow: hidden; }
+  #slider .am-control-nav li a {
+    border-radius: 0;
+    width: 20px;
+    height: 5px;
+    background: #fff;
+    box-shadow: none; }
+    #slider .am-control-nav li a.am-active {
+      background: #ff8887; }
+
+.index-page .nav {
+  background: #f5f6f6;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  padding: 8px 0; }
+  .index-page .nav div {
+    background: #fff;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea; }
+  .index-page .nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .index-page .nav li {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center; }
+    .index-page .nav li a {
+      display: block;
+      height: 85px; }
+    .index-page .nav li img {
+      width: 45px;
+      height: 45px;
+      margin: 10px auto 4px; }
+    .index-page .nav li span {
+      display: block; }
 
 /*# sourceMappingURL=gulp-react.pages.css.map */
