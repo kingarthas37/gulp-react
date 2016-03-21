@@ -21,6 +21,6 @@ var IndexComponent = React.createClass({
 });
 
 
-module.exports = function (...args) {
+module.exports = function (args) {
     ReactDOM.render(<IndexComponent {...args} />,document.body);
 };
