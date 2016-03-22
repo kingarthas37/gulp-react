@@ -85,7 +85,7 @@ img {
       color: #ffd0d8; }
   #header .submit {
     display: block;
-    background: url("../images/common/icon-search.png") no-repeat center;
+    background: url("/public/dist/images/common/icon-search.png") no-repeat center;
     background-size: contain;
     position: absolute;
     width: 30px;
@@ -146,29 +146,34 @@ img {
     #slider .am-control-nav li a.am-active {
       background: #ff8887; }
 
-.product-list ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .product-list ul li {
-    border-bottom: 1px solid #eaeaea;
-    text-align: center;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
-    .product-list ul li:nth-child(1n) {
-      border-left: 1px solid #eaeaea; }
-    .product-list ul li h4 {
-      line-height: 20px;
-      height: 40px;
-      margin-bottom: 5px;
-      padding: 0 10px; }
-    .product-list ul li strong {
-      font-size: 18px;
-      color: #ff6666;
-      font-weight: normal; }
+.product-list {
+  background: #f5f6f6;
+  padding: 8px 0; }
+  .product-list ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .product-list ul li {
+      position: relative;
+      background: #fff;
+      border-bottom: 1px solid #eaeaea;
+      text-align: center;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      .product-list ul li:nth-child(1n) {
+        border-left: 1px solid #eaeaea; }
+      .product-list ul li h4 {
+        line-height: 20px;
+        height: 40px;
+        margin-bottom: 5px;
+        padding: 0 10px; }
+      .product-list ul li strong {
+        font-size: 18px;
+        color: #ff6666;
+        font-weight: normal; }
 
 .index-page .nav {
   background: #f5f6f6;
@@ -221,7 +226,61 @@ img {
   width: 100%; }
 
 .index-page .image-list li {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   overflow: hidden; }
+
+.index-page .product-list .rank {
+  background: url("/public/dist/images/index/rank.png") no-repeat center;
+  background-size: contain;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1.3rem;
+  color: #fff; }
+
+.index-page .brand-list {
+  border-top: 1px solid #ddd;
+  background: #f5f6f6; }
+  .index-page .brand-list li {
+    border-bottom: 1px solid #ddd;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 75px; }
+    .index-page .brand-list li .img {
+      float: left;
+      width: 90px;
+      display: block;
+      text-align: center;
+      padding-top: 6px; }
+      .index-page .brand-list li .img div {
+        text-align: center; }
+      .index-page .brand-list li .img img {
+        width: 60px;
+        height: 60px;
+        border: 1px solid #eaeaea;
+        border-radius: 5px; }
+    .index-page .brand-list li .text {
+      line-height: 75px;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      font-size: 16px; }
+    .index-page .brand-list li .ico {
+      width: 20px;
+      font-size: 16px;
+      line-height: 75px;
+      color: #999;
+      text-align: center; }
 
 /*# sourceMappingURL=gulp-react.pages.css.map */
