@@ -6,5 +6,6 @@ const LEAN_APP_ID = {
 };
 
 module.exports = {
-    leanAppId:LEAN_APP_ID
+    LEAN_APP_ID:LEAN_APP_ID,
+    VIEWPORT_WIDTH:$(window).width()
 };

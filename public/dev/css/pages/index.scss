@@ -50,12 +50,9 @@
     }
     
     .image-list {
-        div {
+        li {
             margin-bottom: 2px;
-        }
-        img {
-            display: block;
-            width: 100%;
+            overflow: hidden;
         }
     }
 

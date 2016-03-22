@@ -27,6 +27,10 @@ h3, h4 {
 form {
   margin: 0; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 #header {
   height: 44px;
   line-height: 44px;
@@ -132,7 +136,6 @@ form {
         padding: 4px; }
 
 #slider {
-  height: 210px;
   overflow: hidden; }
   #slider .am-control-nav li a {
     border-radius: 0;
@@ -150,7 +153,6 @@ form {
   display: flex; }
   .product-list ul li {
     border-bottom: 1px solid #eaeaea;
-    padding: 10px;
     text-align: center;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -158,12 +160,11 @@ form {
             flex: 1; }
     .product-list ul li:nth-child(1n) {
       border-left: 1px solid #eaeaea; }
-    .product-list ul li img {
-      width: 100%; }
     .product-list ul li h4 {
       line-height: 20px;
       height: 40px;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      padding: 0 10px; }
     .product-list ul li strong {
       font-size: 18px;
       color: #ff6666;
@@ -219,11 +220,8 @@ form {
 .index-page h3 img {
   width: 100%; }
 
-.index-page .image-list div {
-  margin-bottom: 2px; }
-
-.index-page .image-list img {
-  display: block;
-  width: 100%; }
+.index-page .image-list li {
+  margin-bottom: 2px;
+  overflow: hidden; }
 
 /*# sourceMappingURL=gulp-react.pages.css.map */

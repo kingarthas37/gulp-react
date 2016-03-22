@@ -1,6 +1,6 @@
 require('../../../js/main');
 
-require('./config');
+require('./utils');
 
 require('./common');
 
