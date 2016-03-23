@@ -8,8 +8,8 @@ var utils = require('./utils');
 var ProductList = React.createClass({
     render:function() {
         
-        let data = this.props.data;
-        let imageHeight = utils.VIEWPORT_WIDTH * 0.5;
+        var data = this.props.data;
+        var imageHeight = utils.VIEWPORT_WIDTH * 0.5;
         
         return (
             <div className="product-list">

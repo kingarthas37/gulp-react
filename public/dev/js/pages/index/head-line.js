@@ -6,7 +6,7 @@ var LazyLoad = require('react-lazy-load');
 var HeadLine = React.createClass({
     render:function() {
         
-        let image = '';
+        var image = '';
         switch(this.props.title) {
             case 'recommand':
                 image = '/public/dist/images/index/head-line-1.png';

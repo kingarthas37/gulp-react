@@ -11,7 +11,7 @@ var IndexNav = React.createClass({
                         {
                             this.props.indexNav.map((item,i)=> {
                                 if(i < 4) {
-                                    let src = '/public/dist/images/index/nav-' + (i+1) + '.png';
+                                    var src = '/public/dist/images/index/nav-' + (i+1) + '.png';
                                     return <li><a href={item.url}><img src={src} alt={item.name}/><span>{item.name}</span></a></li>;
                                 }
                             })
@@ -21,7 +21,7 @@ var IndexNav = React.createClass({
                         {
                             this.props.indexNav.map((item,i)=> {
                                 if(i > 3) {
-                                    let src = '/public/dist/images/index/nav-' + (i+1) + '.png';
+                                    var src = '/public/dist/images/index/nav-' + (i+1) + '.png';
                                     return <li><a href={item.url}><img src={src} alt={item.name}/><span>{item.name}</span></a></li>;
                                 }
                             })

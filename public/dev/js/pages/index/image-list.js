@@ -8,7 +8,7 @@ var utils = require('../../common/utils');
 
 var ImageView = React.createClass({
     render:function() {
-        let imageHeight = utils.VIEWPORT_WIDTH / 2;
+        var imageHeight = utils.VIEWPORT_WIDTH / 2;
         return (
             <ul className="image-list">
                 {this.props.images.map(item => {

@@ -9,8 +9,8 @@ var Slider = React.createClass({
     },
     render: function() {
         
-        let sliders = this.props.sliders;
-        let sliderHeight = utils.VIEWPORT_WIDTH * 0.53;
+        var sliders = this.props.sliders;
+        var sliderHeight = utils.VIEWPORT_WIDTH * 0.53;
         
         return <div id="slider" data-am-widget="slider" style={{height:sliderHeight}} className="am-slider am-slider-a1" ref="root">
             <ul className="am-slides">
