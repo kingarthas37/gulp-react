@@ -18,7 +18,7 @@ var IndexPage = React.createClass({
     render:function() {
         return (
             <div className="index-page">
-                <Header/>
+                <Header getAmountUrl={this.props.getAmountUrl} />
                 <Nav nav={this.props.nav} currentPage={this.props.currentPage} />
                 <Slider sliders={this.props.sliders}/>
                 <IndexNav indexNav={this.props.indexNav}/>

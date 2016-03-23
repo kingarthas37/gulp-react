@@ -253,3 +253,18 @@ img {
         }
     }
 }
+
+.shoppingcart-amount {
+    color: #fff;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    background: #5ed3b8;
+    font-style: normal;
+    text-align: center;
+    padding: 0 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: 5px;
+    right:-6px;
+}

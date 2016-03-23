@@ -175,6 +175,49 @@ img {
         color: #ff6666;
         font-weight: normal; }
 
+.common-btn-big {
+  width: 90%;
+  display: block;
+  height: 44px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 44px;
+  text-align: center;
+  margin: 20px auto 0; }
+  .common-btn-big.dark-pink {
+    background: #ff7373; }
+
+.link-list {
+  background: #fff;
+  margin-bottom: 10px;
+  border-top: 1px solid #ddd; }
+  .link-list li {
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    line-height: 40px;
+    font-size: 14px; }
+    .link-list li span {
+      margin-left: 15px; }
+    .link-list li em {
+      float: right;
+      margin-right: 15px;
+      color: #ccc; }
+
+.shoppingcart-amount {
+  color: #fff;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  background: #5ed3b8;
+  font-style: normal;
+  text-align: center;
+  padding: 0 5px;
+  border-radius: 8px;
+  position: absolute;
+  top: 5px;
+  right: -6px; }
+
 .index-page .nav {
   background: #f5f6f6;
   border-top: 1px solid #eaeaea;
@@ -401,5 +444,13 @@ img {
       background-size: 40px 31px; }
     .login-btns a.btns.alipay span {
       vertical-align: 8px; }
+
+.account-name {
+  height: 70px;
+  background: #f5f6f6;
+  line-height: 70px;
+  text-align: center;
+  color: #333;
+  font-size: 18px; }
 
 /*# sourceMappingURL=gulp-react.pages.css.map */

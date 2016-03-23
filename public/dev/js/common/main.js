@@ -14,3 +14,4 @@ require('./dropdown');
 require('./pure-image');
 require('./btn-big');
 require('./link-list');
+require('./shoppingcart');
