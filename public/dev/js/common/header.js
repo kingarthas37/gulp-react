@@ -15,7 +15,7 @@ var Header = React.createClass({
                     <input type="text" className="search" name="key" placeholder="搜索海淘商品"/>
                 </form>
             </div>
-            <ShoppingCart getAmountUrl={this.props.getAmountUrl} />
+            <ShoppingCart shoppingCartUrl="login.html" getAmountUrl={this.props.getAmountUrl} />
         </header>;
     }
 });
