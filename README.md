@@ -5,6 +5,7 @@
 
 ## 最近更新
 - 2016.3.26增加React demo
+- [demo预览](http://kingarthas37.github.io/static/react/html/index.html)
 
 ## 依赖
 - 参考[另一个gulp实例](https://github.com/kingarthas37/gulp)
