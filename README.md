@@ -1,7 +1,7 @@
 基于gulp-react综合实例
 ==================================
 
-> 一个基于gulp搭建的前端基础配置实例，基于browserify,react
+> 一个基于gulp搭建的前端基础配置实例，基于browserify,react,amazeui
 
 ## 最近更新
 - 2016.3.26增加React demo
