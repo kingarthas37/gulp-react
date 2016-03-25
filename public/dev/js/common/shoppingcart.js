@@ -7,17 +7,17 @@ var ShoppingCart = React.createClass({
         return {shoppingCartAmount:0}
     },
     componentDidMount: function() {
-        $.ajax({
-            url: this.props.getAmountUrl,
-            dataType: 'json',
-            cache: false,
-            success: function(data) {
-                this.setState({shoppingCartAmount: data.amount});
-            }.bind(this),
-            error: function(xhr, status, err) {
-                console.error(this.props.url, status, err.toString());
-            }.bind(this)
-        });
+        //$.ajax({
+        //    url: this.props.getAmountUrl,
+        //    dataType: 'json',
+        //    cache: false,
+        //    success: function(data) {
+        //        this.setState({shoppingCartAmount: data.amount});
+        //    }.bind(this),
+        //    error: function(xhr, status, err) {
+        //        console.error(this.props.url, status, err.toString());
+        //    }.bind(this)
+        //});
     },
     render: function() {
         return (

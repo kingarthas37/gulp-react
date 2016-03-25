@@ -34,7 +34,7 @@ gulp.task('browserify', function () {
         packageCache: {},
         fullPaths: false,
         entries: [path.resolve(config.path.jsDev,'common/main.js')],  //入口为/common/main.js
-        debug: true,  //开启sourcemaps
+        debug: true  //开启sourcemaps
     }).transform(reactify,{
         "es6": true
     });
@@ -74,10 +74,8 @@ gulp.task('browserify:prod', function () {
     var b = browserify({
         entries: [path.resolve(config.path.jsDev,'common/main.js'),path.resolve(config.path.jsDev,'pages/main.js')],
         debug: true
-    }).transform(babelify,{
-        compact: false,
-        presets:['es2015'],
-        only:/\/public\/dev\/js\//
+    }).transform(reactify,{
+        "es6": true
     });
 
     var bundle = function () {
@@ -85,7 +83,7 @@ gulp.task('browserify:prod', function () {
         //将pages下的js 增加require到页面
         pageScripts.forEach(function(page) {
             if(page !== 'main.js') {
-                b.require(path.resolve(config.path.jsDev,'pages/',page), {expose:page.replace(/\.js$/,'')});
+                b.require(path.resolve(config.path.jsDev,'pages',page),{expose:page.replace('/','-').replace(/\.js$/,'')});
             }
         });
         
