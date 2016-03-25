@@ -3,8 +3,9 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Header = require('../../common/header-sub');
-var PureBanner = require('../../common/pure-image');
+var Header = require('../../components/header-sub');
+var PureBanner = require('../../components/pure-image');
+
 var Login = require('./login-btns');
 
 var LoginComponent = React.createClass({

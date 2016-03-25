@@ -3,9 +3,9 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Header = require('../../common/header-sub');
-var LinkList = require('../../common/link-list');
-var LogoutBtn = require('../../common/btn-big');
+var Header = require('../../components/header-sub');
+var LinkList = require('../../components/link-list');
+var LogoutBtn = require('../../components/buttons/btn-big');
 
 var AccountComponent = React.createClass({
     render:function() {

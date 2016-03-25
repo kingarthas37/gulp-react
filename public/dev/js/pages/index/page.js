@@ -3,10 +3,10 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Header = require('../../common/header');
-var Nav = require('../../common/nav');
-var Slider = require('../../common/slider');
-var ProductList = require('../../common/product-list');
+var Header = require('../../components/header');
+var Nav = require('../../components/nav');
+var Slider = require('../../components/slider');
+var ProductList = require('../../components/product-list');
 
 var IndexNav = require('./nav');
 var IndexImageView = require('./image-view');

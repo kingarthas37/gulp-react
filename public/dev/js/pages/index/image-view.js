@@ -1,8 +1,6 @@
 'use strict';
 
 var React = require('react');
-var LazyLoad = require('react-lazy-load');
-
 
 var ImageView = React.createClass({
     render:function() {

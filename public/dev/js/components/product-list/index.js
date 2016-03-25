@@ -3,7 +3,7 @@
 var React = require('react');
 var LazyLoad = require('react-lazy-load');
 
-var utils = require('./utils');
+var utils = require('../../common/utils');
 
 var ProductList = React.createClass({
     render:function() {

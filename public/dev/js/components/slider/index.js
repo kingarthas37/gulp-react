@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react');
-var utils = require('./utils');
+var utils = require('../../common/utils');
 
 var Slider = React.createClass({
     componentDidMount: function() {
