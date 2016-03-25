@@ -18,6 +18,7 @@
     "gulp-autoprefixer": "~3.1.0",
     "gulp-babel": "^6.1.1",
     "gulp-concat": "~2.6.0",
+    "gulp-css-url-adjuster": "^0.2.3",
     "gulp-file": "~0.2.0",
     "gulp-if": "~2.0.0",
     "gulp-imagemin": "~2.4.0",
@@ -51,7 +52,7 @@
   "browser": {
     "react": "./public/js/react.min.js",
     "react-dom": "./public/js/react-dom.min.js",
-    "react-lazy-load":"./public/js/react-lazyload.min.js",
+    "react-lazy-load": "./public/js/react-lazyload.min.js",
     "jquery": "./public/js/jquery.min.js",
     "amazeui": "./public/js/amazeui.min.js",
     "underscore": "./public/js/underscore.min.js",
