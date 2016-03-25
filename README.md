@@ -1,20 +1,14 @@
-一个gulp综合实例
+基于gulp-react综合实例
 ==================================
 
-> 一个基于gulp搭建的前端基础配置实例，基于browserify
+> 一个基于gulp搭建的前端基础配置实例，基于browserify,react,amazeui
 
 ## 最近更新
-- 2016.1.20增加支持es6模块 (babelify)
+- 2016.3.26增加React demo
+- [demo预览](http://kingarthas37.github.io/static/react/html/index.html)
 
 ## 依赖
-- [nodejs](https://nodejs.org/)
-- [gulp](https://www.npmjs.com/package/gulp)
-
-## 主要模块
-- [browserify](https://www.npmjs.com/package/browserify)
-- [babelify](https://www.npmjs.com/package/babelify)
-- [sass](https://www.npmjs.com/package/gulp-sass)
-- [smithsprite](https://www.npmjs.com/package/gulp.spritesmith)
+- 参考[另一个gulp实例](https://github.com/kingarthas37/gulp)
 
 ## 安装
 Install Gulp Globally
@@ -27,7 +21,7 @@ Install npm packages
 ```
 
 ## 运行
-- dev环境:包括browserify编译、sass编译、sprite图片合并等工作，并对css、js、images进行watch
+- dev环境:包括browserify编译、sass编译、sprite图片合并等工作(已移除sprites，可参考gulp的实例)，并对css、js、images进行watch
 ```
   gulp
 ```
