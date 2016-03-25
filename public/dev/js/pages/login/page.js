@@ -13,7 +13,7 @@ var LoginComponent = React.createClass({
             <div className="login-page">
                 <Header title={this.props.title} data={this.props.data} />
                 <PureBanner imgSrc={this.props.banner} />
-                <Login />
+                <Login weiboUrl={this.props.loginUrl.weibo} qqUrl={this.props.loginUrl.qq} alipayUrl={this.props.loginUrl.alipay} />
             </div>
         );
     }

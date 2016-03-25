@@ -218,3 +218,53 @@ img {
     }
      
 }
+
+.common-btn-big {
+    width:90%;
+    display:block;
+    height:44px;
+    border-radius:3px;
+    color:#fff;
+    font-size:16px;
+    line-height:44px;
+    text-align:center;
+    margin:20px auto 0;
+    &.dark-pink {
+        background:$dark-pink
+    }
+}
+
+.link-list {
+    background:#fff;
+    margin-bottom:10px;
+    border-top:1px solid #ddd;
+    li {
+        height:40px;
+        border-bottom:1px solid #ddd;
+        line-height:40px;
+        font-size:14px;
+        span {
+            margin-left:15px;
+        }
+        em {
+            float:right;
+            margin-right:15px;
+            color:#ccc;
+        }
+    }
+}
+
+.shoppingcart-amount {
+    color: #fff;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    background: #5ed3b8;
+    font-style: normal;
+    text-align: center;
+    padding: 0 5px;
+    border-radius: 8px;
+    position: absolute;
+    top: 5px;
+    right:-6px;
+}

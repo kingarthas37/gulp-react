@@ -1,10 +1,11 @@
 'use strict';
 
 var React = require('react');
+var ShoppingCart = require('./shoppingcart');
 
 var Header = React.createClass({
     render: function() {
-        return <header id="header" className="am-g">
+        return <header id="header" className="am-g am-header am-header-default">
             <div className="am-u-sm-2 am-text-left col-back">
                 <a href="#" className="logo">KIDS</a>
             </div>
@@ -14,10 +15,7 @@ var Header = React.createClass({
                     <input type="text" className="search" name="key" placeholder="搜索海淘商品"/>
                 </form>
             </div>
-            <div className="am-u-sm-2 am-text-right col-right">
-                <a className="btn-cart icon-header-cart" href="cart.php">
-                </a>
-            </div>
+            <ShoppingCart getAmountUrl={this.props.getAmountUrl} />
         </header>;
     }
 });

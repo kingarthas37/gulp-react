@@ -12,3 +12,6 @@ require('./header-sub');
 require('./header-right-dropdown');
 require('./dropdown');
 require('./pure-image');
+require('./btn-big');
+require('./link-list');
+require('./shoppingcart');
